@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .omg{
+            animation-name: uper;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes uper {
+            50%{
+                scale: 1.1;
+                color: chocolate;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="w-[100wh] h-[100vh] bg-teal-200 flex flex-col justify-center gap-6 overflow-hidden">
+        <h1 class="text-2xl font-semibold text-center omg">Temperature Converter </h1>
+        <div class="mx-auto flex flex-col gap-4">
+            <h2 class="text-xl font-semibold text-slate-700">Celcius</h2>
+             <input type="text" placeholder="enter temperature in celcius" value="" celcius class="h-8 w-[300px] rounded-[8px]">
+            <h2 class="text-xl font-semibold text-slate-700">Fahrenhite</h2>
+            <input type="text" placeholder=" temperature in fehrenite" value="" class="h-8 w-[300px] rounded-[8px]" fahrenhite>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
